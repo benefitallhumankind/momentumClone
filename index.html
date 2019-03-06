@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<meta name="description" content="Momentum Clone">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="MomentumSP">
+		<meta property="og:description" content="Momentum Clone">
+		<meta property="og:image" content="./img/favicon.png">
+		<meta property="og:url" content="./img/favicon.png">
+		
+        <title>MomentumSP</title>
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+        <link rel="stylesheet" href="index.css"/>	
+		<!-- favicon -->
+		<link rel="shortcut icon" href="./img/favicon.png"/>
+		<link rel="apple-touch-icon" href="./img/favicon.png"/>
+		<link rel="icon" href="./img/favicon.png"/>		
+        <!-- 이태권 사이드 프로젝트-1 2019년 2월 v.2.3 190306 -->
+    </head>
+    <body>
+		<div id="overlap"></div>
+        <div class="wrap"> 
+            <ul class="js-toDoList">  
+                <li class="list-title">
+                    Today
+                </li>              
+            </ul>
+            <div class="js-weather clearFix" title="Undefined" onclick="goToWeather();"></div>
+            <ul class="randomImg-list">
+            </ul>  
+            <div class="content">
+                <div class="js-clock">
+                    <h1>00:00:00</h1>
+                </div>
+				<div class="positionR">
+					<form class="js-form form">
+						<p class="question"><label for="username">Hello, what's your name?</label></p>
+						<p><input id="username" type="text" autocomplete="off"></p>
+					</form>
+					<div class="greetingTodo">
+						<p class="js-greetings greeting"></p>
+						<form class="js-toDoForm">
+							<input type="text" autocomplete="off"/>
+						</form>
+					</div>
+				</div>
+            </div>
+			<div class="bottomBar clearFix">
+				<form class="js-search">
+					<label for="keyword">SEARCH</label>
+					<input id="keyword" name="keyword" type="text" autocomplete="off"/>
+				</form>
+				<div class="relationship">
+					<ul>
+						<li>
+							<a href="/brickout"><img src="./img/brickouticon.png" alt="Brick Out 아이콘"> Brick Out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <script src="search.js"></script>
+        <script src="bg.js"></script>
+        <script src="clock.js"></script>
+        <script src="todo.js"></script>
+        <script src="greeting.js"></script>
+        <script src="weather.js"></script>
+    </body>
+</html>

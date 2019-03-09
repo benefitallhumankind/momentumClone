@@ -23,7 +23,7 @@ function getWeather(lat,lng){
         place = json.name;
 
         weather.innerHTML = `<p class="weatherIcon">
-        <img src = "http://openweathermap.org/img/w/${weatherIcon}.png" />
+        <img src = "https://openweathermap.org/img/w/${weatherIcon}.png" />
         </p>
         <p class="weatherInfo" title="${place}">${temperature}℃<span class="location">${place}</span></p>`;
         weather.setAttribute("title",`${weatherMain}`);
